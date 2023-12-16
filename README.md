@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# TodoList React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple TodoList app built with React and Redux.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [How to Run](#how-to-run)
+- [Dependencies](#dependencies)
+- [Code Structure](#code-structure)
+- [Redux State Management](#redux-state-management)
+- [Styling](#styling)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Fetch and show todo items from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/todos).
+- Add a new todo item (dummy request to API).
+- Update a todo item (dummy request to API).
+- Delete a todo item (dummy request to API).
+- Toggle the completed status of a todo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+|-- src
+| |-- components
+| | |-- TodoFormModal.js
+| | |-- TodoList.js
+| | |-- Loader.js
+| |-- redux
+| | |-- reducers
+| | | |-- todoReducer.js
+| | |-- middlewares
+| |   |-- loggerMiddleware.js
+| |-- App.js
+| |-- index.js
+| |-- store.js
+|-- public
+| |-- index.html
+|-- README.md
+|-- .gitignore
+|-- package.json
+|-- etc.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Run
 
-### `npm run build`
+1. Clone the repository: `git clone https://github.com/your-username/todo-list-react.git`
+2. Navigate to the project directory: `cd todo-list-react`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React
+- Redux
+- @mui/material
+- etc.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Code Structure
 
-### `npm run eject`
+### Redux State Management
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application uses Redux for state management. The main reducer is `todoReducer`, and actions related to fetching, adding, updating, and deleting todos are defined in this reducer.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Styling
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app uses MUI (Material-UI) for styling. Styles are applied using the `styled` utility from the `@mui/system` package.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+- Navigate to [https://jsonplaceholder.typicode.com/todos](https://jsonplaceholder.typicode.com/todos) to see the initial list of todos.
+- Add new todos using the "Add Todo" button.
+- Update and delete todos as needed.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to contribute to the project. Follow the standard GitHub flow:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/new-feature`
+3. Commit your changes: `git commit -m 'Add new feature'`
+4. Push to the branch: `git push origin feature/new-feature`
+5. Create a pull request.
