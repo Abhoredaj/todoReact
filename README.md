@@ -12,7 +12,6 @@ A simple TodoList app built with React and Redux.
 - [Styling](#styling)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -46,7 +45,7 @@ A simple TodoList app built with React and Redux.
 |-- etc.
 
 
-
+```
 
 ## How to Run
 
