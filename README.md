@@ -23,6 +23,7 @@ A simple TodoList app built with React and Redux.
 - Toggle the completed status of a todo.
 
 ## Project Structure
+```bash
 
 |-- src
 | |-- components
@@ -45,10 +46,12 @@ A simple TodoList app built with React and Redux.
 |-- etc.
 
 
+
+
 ## How to Run
 
-1. Clone the repository: `git clone https://github.com/your-username/todo-list-react.git`
-2. Navigate to the project directory: `cd todo-list-react`
+1. Clone the repository: `git clone https://github.com/Abhoredaj/todoReact.git`
+2. Navigate to the project directory: `cd todoReact`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
 
